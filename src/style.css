@@ -12,6 +12,16 @@ html {
     overflow: hidden;
 }
 
+.contact-message {
+    min-width: 100%;
+    min-height: 20vh;
+}
+
+.contact-email {
+    min-width: 100%;
+    line-height: 1rem;
+}
+
 .left {
     margin-left: 3%;
     margin-right: 65%;
