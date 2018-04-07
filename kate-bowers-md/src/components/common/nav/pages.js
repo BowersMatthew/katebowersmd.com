@@ -1,6 +1,6 @@
 export const Pages = [
     {
-      name: 'About',
+      name: 'About Us',
       link: '/about',
       id: 'about'
     },

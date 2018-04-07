@@ -1,5 +1,37 @@
+html {
+  overflow-y: scroll;
+}
+
+.newClass {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+h1 {
+  font-size: 1.8em;
+  color: rgb(128,104,176);
+}
+
+h2 {
+  font-size: 1.6em;
+  color: rgb(128, 104, 176);
+}
+
+.vaccine-heading {
+  color: gray;
+}
+
 .App {
   text-align: center;
+}
+
+ul {
+  text-align: left;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 .App-logo {
@@ -8,22 +40,146 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-image: url('./resources/Header.jpg');
+  background-size: 100vw;
+  height: auto;
   padding: 20px;
-  color: white;
+  color: rgb(180, 99, 76);
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
+  display: inline-block;
+  color: rgb(250, 184, 128);
+  padding: 0.2em;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .App-sub-title {
-  font-size: 1.1em;
+  font-size: 1.6em;
+  display: inline-block;
+  padding: 0.2em;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .App-intro {
+  display: block;
   font-size: large;
+}
+
+nav {
+  margin: auto;
+  line-height: 3em;
+  background-color: rgb(253, 211, 151);
+  height:3em;
+}
+
+nav a {
+  color: black;
+  margin: 20px 20px 20px 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a.active-page {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: black;
+}
+
+.content-text {
+  text-align: left;
+}
+
+.left {
+  margin-left: 2%;
+  display: block;
+  float: left;
+  width: 45%;
+}
+
+.right {
+  margin-right: 2%;
+  display: block;
+  float: right;
+  width:45%;
+}
+
+.staff-about-picture {
+  margin-bottom: 2%;
+}
+
+.location-map {
+  min-width: auto;
+}
+
+.resource-list:first-child {
+  text-align: left;
+  align-content: left;
+  margin-left: 7vw;
+  margin-top: 5vw;
+}
+
+.resource-list {
+  text-align: left;
+  align-content: left;
+  margin-left: 7vw;
+  margin-top: 7vh;
+}
+
+.list-button {
+  float: left;
+  height: 4vw;
+  width: 4vw;
+  border: none;
+  border-radius: 4px;
+  background-image: url('./resources/list-button.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.list-button:hover {
+  border: 1px solid rgb(253, 211, 151);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgb(253, 211, 151), 0 0 10px rgb(253, 211, 151);
+}
+
+.glow:hover {
+  color: white;
+  padding: 5px;
+  border: 1px solid rgb(253, 211, 151);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgb(253, 211, 151), 0 0 10px rgb(253, 211, 151);
+}
+
+.list-button-label {
+  text-align: left;
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 0px 1vw;
+  display: inline-block;
+}
+
+.page-footer {
+  background: url('./resources/bottom-shape.png');
+  height: 160px;
+  width: 100vw;
+  bottom: 0px;
+  background-size: cover;
+  display: block;
 }
 
 @keyframes App-logo-spin {
