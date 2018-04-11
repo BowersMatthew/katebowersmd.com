@@ -4,21 +4,21 @@ import docPic1 from '../../resources/doc-pic-1.JPG';
 const About = () => {
     return (
         <section className="about">
-            <h2>About Us</h2>
+            <h1>About Us</h1>
             <div className="content">
                 <div className="left">
-                    <h3>Providers and Staff</h3>
+                    <h2>Providers and Staff</h2>
+                    <h3 className="full">Dr. Bowers</h3>
                     <img src={docPic1} className="staff-about-picture left" alt="Doctor Bowers" />
-                    <h2 className="right">Dr. Bowers</h2>
                     <p className="content-text right">
-                        Dr. Bowers grew up in Midlothian,Virginia. She attended Denison University in Ohio for college, and then returned to Richmond to attend medical school at VCU's Medical College of Virginia. For residency Dr. Bowers returned to Ohio to train at Cincinnati Children's Hospital Medical Center, one of the nation's top pediatric hospitals. Following residency, she returned to the Richmond Metro area and worked in a group prive practice for three and a half years, before starting her own pediatric medical practice.
+                        Dr. Bowers grew up in Midlothian, Virginia. She attended Denison University in Ohio for college, and then returned to Richmond to attend medical school at VCU's Medical College of Virginia. For residency Dr. Bowers returned to Ohio to train at Cincinnati Children's Hospital Medical Center, one of the nation's top pediatric hospitals. Following residency, she returned to the Richmond Metro area and worked in a group prive practice for three and a half years, before starting her own pediatric medical practice.
                         Dr. Bowers now lives in Midlothian, Va with her husband and two kids. She enjoys board games, reading, riding bikes with her kids and is currently the President of the Richmond Pediatric Society.
                     </p>
                 </div>
                 <div className="right">
-                    <h3>Our Practice</h3>
+                    <h2>Our Practice</h2>
                     <p className="content-text">
-                        Our Pediatric practice was designed from the ground up with 21st century families in mind. Our aim is to provide modern, evidence based care for kids ages birth through college, while facilitating easy electronic communication and reducing paper use. Our electronic medical record was designed for pediatric use, which allows us to take better, more seamless care of your family.
+                        Our Pediatric practice was designed from the ground up with 21st century families in mind. Our aim is to provide modern, evidence based care for kids from birth through college, while facilitating easy electronic communication and reducing paper use. Our electronic medical record was designed for pediatric use, which allows us to take better, more seamless care of your family.
                     </p>
 
                     <div>

@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-export const ListButton = () => {
-    return (<Link to='/resources/vaccines' className='list-button'></Link>);
+function ListButton(props) {
+    return (<a alt={props.target} href={props.target} className='list-button'></a>);
 }
 
 export default ListButton;

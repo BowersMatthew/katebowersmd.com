@@ -8,7 +8,6 @@ export class NavLink extends Component {
         let name = page.name;
         let link = page.link;
         let cssClass = this.props.className;
-        console.log(cssClass);
         return <Link className={cssClass} to={link}>{name}</Link>
     }
 }

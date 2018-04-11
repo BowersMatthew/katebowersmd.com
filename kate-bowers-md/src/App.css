@@ -1,5 +1,14 @@
 html {
   overflow-y: scroll;
+  background-color: rgb(255,244,229)
+}
+
+.home {
+  background-color: none;
+  width: 100vw;
+  height: 1024px;
+  background-image: url("./resources/background-image.jpg");
+  background-size: 100%;
 }
 
 .newClass {
@@ -10,16 +19,17 @@ html {
 
 h1 {
   font-size: 1.8em;
-  color: rgb(128,104,176);
+  color: rgb(136,114,176);
 }
 
 h2 {
   font-size: 1.6em;
-  color: rgb(128, 104, 176);
+  color: rgb(253, 156, 106);
 }
 
-.vaccine-heading {
-  color: gray;
+h3 {
+  font-size: 1.4em;
+  color: rgb(94, 148,143)
 }
 
 .App {
@@ -109,6 +119,13 @@ nav a:visited {
   display: block;
   float: left;
   width: 45%;
+  min-width: 45%;
+}
+
+.left.middle {
+  margin-left: 15%;
+  width: 35%;
+  min-width: 35%;
 }
 
 .right {
@@ -116,10 +133,37 @@ nav a:visited {
   display: block;
   float: right;
   width:45%;
+  min-width: 45%;
+}
+
+.heading-left {
+  text-align: left;
+}
+
+.right.middle {
+  margin-right: 8%;
+  width: 35%;
+  min-width: 35%;
+}
+
+
+.full {
+  margin: auto;
+  width: 65%;
+}
+
+.fuller {
+  margin: auto;
+  width: 80%;
+}
+
+.page-header {
+  width: 100vw;
 }
 
 .staff-about-picture {
   margin-bottom: 2%;
+  -webkit-margin-before: 1em;
 }
 
 .location-map {
@@ -145,6 +189,7 @@ nav a:visited {
   height: 4vw;
   width: 4vw;
   border: none;
+  padding: 4px;
   border-radius: 4px;
   background-image: url('./resources/list-button.jpg');
   background-position: 50% 50%;
@@ -157,8 +202,14 @@ nav a:visited {
   box-shadow: 0 0 10px rgb(253, 211, 151), 0 0 10px rgb(253, 211, 151);
 }
 
+.glow {
+  padding: 6px;
+  margin: -0.5em;
+  display: block;
+}
+
 .glow:hover {
-  color: white;
+  color: black;
   padding: 5px;
   border: 1px solid rgb(253, 211, 151);
   border-radius: 4px;
@@ -173,16 +224,119 @@ nav a:visited {
   display: inline-block;
 }
 
-.page-footer {
-  background: url('./resources/bottom-shape.png');
-  height: 160px;
-  width: 100vw;
+.siteMap-main-section {
+  font-size: 1.4em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.siteMap-secondary-section {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.siteMap-list-item {
+  margin-bottom: 2vh;
+}
+
+.page-footer-image {
+  content: "";
+  background: url('./resources/bottom-shape.png') repeat-x;
+  height: 200px;
+  background-size: 49.5vw;
   bottom: 0px;
-  background-size: cover;
-  display: block;
+  display: flex;
+  align-items: flex-end;
+  clear: both;
+}
+
+.page-footer-text {
+  margin: 0 auto;
+}
+
+.page-footer-nav {
+  background: none;
+}
+
+a .button-google {
+  width: 133px;
+}
+
+a .button-apple {
+  width: 133px;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 570px) {
+  .hamburger {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    width: 50px;
+  }
+
+  nav a.active-page {
+    font-weight: normal;
+    display: block;
+  }
+
+  nav div {
+    background-color: white;
+    width: 75vw;
+    z-index: 1; position: relative;
+    clear: both;
+    content: '';
+  }
+
+  nav a.main-nav {
+    display: none;
+  }
+
+  nav a.main-nav.responsive-nav-link {
+    text-align: left !important;
+    display: block;
+    font-size: 2em !important;
+    height: 2em;
+    line-height: 2em !important;
+    margin: 2px 0px 0px 0px;
+  }
+
+  .left {
+    margin: auto;
+    width: 90vw;
+    min-width: 90vw;
+    text-align: center;
+    float: left;
+  }
+
+  .content-text {
+    text-align: center;
+  }
+
+  .right {
+    margin: auto;
+    width: 90vw;
+    min-width: 90vw;
+    text-align: center;
+    float: left;
+  }
+
+  .left.middle {
+    margin-left: auto;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .right.middle {
+    margin-right: auto;
+    width: 100%;
+    min-width: 100%;
+  }
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export class Home extends Component {
     render() {
-        return <div>Home content</div>
+        return <section className='home' alt='Child Releasing Fireflies into Night Sky'></section>
     }
 }
 

@@ -1,7 +1,14 @@
 import React from 'react';
+import FooterLinks from './nav/footer-links';
 
 export const Footer = () => {
-    return <div className="page-footer">Copywrite Kate Bowers MD 2018</div>
+    return (
+        <div className="page-footer-image">
+            <div className="page-footer-text">Firefly Pediatrics<br/>2937 Fox Trace Ln<br/> Midlothian, VA 23112
+            <FooterLinks />
+            </div>
+        </div>
+    )
 }
 
 export default Footer;

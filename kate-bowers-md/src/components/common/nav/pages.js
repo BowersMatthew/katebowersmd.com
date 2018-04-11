@@ -10,15 +10,15 @@ export const Pages = [
       id: 'new-patients'
     },
     {
-      name: 'Health Resources',
+      name: 'Resources',
       link: '/resources',
       id: 'health-resources'
     },
-    {
-      name: 'Current Illness',
-      link: '/illness',
-      id: 'current-illness'
-    },
+    // {
+    //   name: 'Current Illness',
+    //   link: '/illness',
+    //   id: 'current-illness'
+    // },
     {
       name: 'Contact Us',
       link: '/contact',
