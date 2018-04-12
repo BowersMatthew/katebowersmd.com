@@ -9,16 +9,15 @@ const About = () => {
                 <div className="left">
                     <h2>Providers and Staff</h2>
                     <h3 className="full">Dr. Bowers</h3>
-                    <img src={docPic1} className="staff-about-picture left" alt="Doctor Bowers" />
-                    <p className="content-text right">
-                        Dr. Bowers grew up in Midlothian, Virginia. She attended Denison University in Ohio for college, and then returned to Richmond to attend medical school at VCU's Medical College of Virginia. For residency Dr. Bowers returned to Ohio to train at Cincinnati Children's Hospital Medical Center, one of the nation's top pediatric hospitals. Following residency, she returned to the Richmond Metro area and worked in a group prive practice for three and a half years, before starting her own pediatric medical practice.
-                        Dr. Bowers now lives in Midlothian, Va with her husband and two kids. She enjoys board games, reading, riding bikes with her kids and is currently the President of the Richmond Pediatric Society.
+                    <img src={docPic1} className="staff-about-picture left-inner" alt="Doctor Bowers" />
+                    <p className="content-text right-inner">
+                    Dr. Kate Bowers grew up in Midlothian, Virginia. She attended Denison University in Ohio, and VCU School of Medicine in Richmond. Dr. Bowers completed her residency training at Cincinnati Children's Hospital Medical Center, one of the nation's top pediatric hospitals. She eventually returned to the Richmond Metro Area to work in a private group practice for several years before starting her own pediatric medical practice. In addition to her work with Firefly, she serves as president of the Richmond Pediatric Society. <br/> When she’s not at work, Dr. Bowers enjoys board games, reading, and riding bikes with her kids.
                     </p>
                 </div>
                 <div className="right">
                     <h2>Our Practice</h2>
                     <p className="content-text">
-                        Our Pediatric practice was designed from the ground up with 21st century families in mind. Our aim is to provide modern, evidence based care for kids from birth through college, while facilitating easy electronic communication and reducing paper use. Our electronic medical record was designed for pediatric use, which allows us to take better, more seamless care of your family.
+                    Firefly Pediatrics was designed from the ground up, with 21st-century families in mind. Our aim is to provide modern, evidence-based care for children and young adults from birth through college while facilitating easy electronic communication and reducing paper use. Our electronic medical records were designed for pediatric use and allow us to take better, more seamless care of your family.
                     </p>
 
                     <div>

@@ -7,7 +7,7 @@ const Development = () => {
         <section className="development">
             <h1 className="page-header">Growth and Development</h1>
             <div className="content">
-                <p className='content-text full'>Monitoring your kids growth and development is an enormous part of a pediatrician's job. It's one of the main reasons we see kids so frequently in the first 3 years of life! Take a peak at some of my favorite resources for tracking development. Keep in mind that skills develop over a range of time, so if you have concerns that your child is not doing something he or she should be, check in with us! </p>
+                <p className='content-text full'>Monitoring the growth and development of children is an enormous part of a pediatrician's job. It's one of the main reasons we see kids so frequently in the first three years of life! Take a peak at some of my favorite resources for tracking development. Keep in mind that skills develop over a range of time. If you have concerns that your child is not doing something he or she should be, check in with us. </p>
             </div>
             <div className="left">
                 <h3>CDC Milestone Tracker</h3>

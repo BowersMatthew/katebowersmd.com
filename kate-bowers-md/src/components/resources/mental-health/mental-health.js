@@ -46,7 +46,7 @@ function MentalHealth() {
             <div className='content'>
                 <div className='full'>
                     <p className='content-text'>
-                        Mental Health is such an important part of child development, and your own mental health is a huge part of how you parent. If you have any concerns about your child's mental health, please bring it up with your pediatrician - and don't wait until your next visit. However, here are some decent resources you can use to jump start conversations with your children regarding mental health. Start talking about emotions when your kids are young so they have a verbal toolkit with which to process feelings as they get older.
+                        Mental Health is such an important part of child development, and your own mental health is a huge part of how you parent. If you have any concerns about your child's mental health or your own, please bring it up with your doctor. Do not wait until your next visit! <br/>Here are some valuable resources you can use to jump-start conversations with your children about mental health. Start talking about emotions when your kids are young so they have the tools to do so as they get older.
                     </p>
                 </div>
                 <div className='left'>
