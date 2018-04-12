@@ -88,9 +88,14 @@ const Vaccines = () => {
             <div className="content">
                 <div className="full">
                     <h2 className="vaccine-heading">Vaccine Education</h2>
-                    <p className="content-text">Hands down, the best place on the internet to get accurate, scientific information about vaccines is the Children’s Hospital of Philadelphia Vaccine Education Center. It will discuss ingredients, side effects, and everything you could possibly want to know about vaccines. This is your Go-To Resource.
+                    <p className="content-text">Hands down, the best place on the internet to get accurate, scientific information about vaccines is the Vaccine Education Center at Children's Hospital of Philadelphia. The site discusses ingredients, side effects, and everything you could possibly want to know about vaccines.
                     </p>
-                    <a className="glow" href="http://www.chop.edu/centers-programs/vaccine-education-center">Vaccine Education Center</a>
+                    <a className="glow" 
+                        href="http://www.chop.edu/centers-programs/vaccine-education-center" 
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                            Vaccine Education Center
+                    </a>
                 </div>
                 <h2>Our Vaccine Schedule</h2>
                 <div><iframe src="https://www.cdc.gov/vaccines/schedules/easy-to-read/child-shell-easyread.html" width="65%" height="1000px" frameborder="0" scrolling="auto" title="Easy-to-Read Schedule for Children, Birth through 6 Years">Easy-to-Read Schedule for Children, Birth through 6 Years</iframe></div>
