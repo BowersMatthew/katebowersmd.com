@@ -7,9 +7,27 @@ html {
   background-color: none;
   width: 100vw;
   height: 1024px;
-  background-image: url("./resources/background-image.jpg");
-  background-size: 100%;
+  background-image: url("./resources/background-image-mobile-portrait.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
 }
+
+@media screen and (min-width: 400px) {
+  .home {
+    background-image: url("./resources/background-image.jpg");
+  } 
+}
+
+@media screen and (min-width: 1300px) {
+  .home {
+    background-image: url("./resources/background-image-wide.jpg");
+    background-size: contain;
+  }
+}
+
+
 
 .newClass {
   display: table;
@@ -51,7 +69,7 @@ li {
 
 .App-header {
   background-image: url('./resources/Header.jpg');
-  background-size: 100vw;
+  background-size: cover;
   height: auto;
   padding: 20px;
   color: rgb(180, 99, 76);
@@ -110,16 +128,26 @@ nav a:visited {
   color: black;
 }
 
-.content-text {
-  text-align: left;
-}
 
 .left {
-  margin-left: 2%;
-  display: block;
-  float: left;
-  width: 45%;
-  min-width: 45%;
+  margin: auto;
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.content-text {
+  text-align: justify;
+}
+
+@media screen and (min-width: 570px) {
+  .left {
+    margin-left: 2%;
+    display: block;
+    float: left;
+    width: 45%;
+    min-width: 45%;
+  }
 }
 
 .left.middle {
@@ -129,11 +157,20 @@ nav a:visited {
 }
 
 .right {
-  margin-right: 2%;
-  display: block;
-  float: right;
-  width:45%;
-  min-width: 45%;
+  margin: auto;
+  width: 90vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+@media screen and (min-width: 570px) {
+  .right {
+    margin-right: 2%;
+    display: block;
+    float: right;
+    width:45%;
+    min-width: 45%;
+  }
 }
 
 .heading-left {
@@ -162,8 +199,8 @@ nav a:visited {
 }
 
 .staff-about-picture {
+  width: 64vw;
   margin-bottom: 2%;
-  -webkit-margin-before: 1em;
 }
 
 .location-map {
@@ -185,15 +222,22 @@ nav a:visited {
 }
 
 .list-button {
-  float: left;
-  height: 4vw;
-  width: 4vw;
-  border: none;
-  padding: 4px;
-  border-radius: 4px;
-  background-image: url('./resources/list-button.jpg');
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .list-button {
+    float: left;
+    height: 4vw;
+    width: 4vw;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    background-image: url('./resources/list-button.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-flex;
+  }
 }
 
 .list-button:hover {
@@ -219,9 +263,10 @@ nav a:visited {
 .list-button-label {
   text-align: left;
   font-size: 1.5em;
-  line-height: 2em;
+  line-height: 1.5em;
   margin: 0px 1vw;
   display: inline-block;
+  overflow: hidden;
 }
 
 .siteMap-main-section {
@@ -306,26 +351,6 @@ a .button-apple {
     height: 2em;
     line-height: 2em !important;
     margin: 2px 0px 0px 0px;
-  }
-
-  .left {
-    margin: auto;
-    width: 90vw;
-    min-width: 90vw;
-    text-align: center;
-    float: left;
-  }
-
-  .content-text {
-    text-align: center;
-  }
-
-  .right {
-    margin: auto;
-    width: 90vw;
-    min-width: 90vw;
-    text-align: center;
-    float: left;
   }
 
   .left.middle {
