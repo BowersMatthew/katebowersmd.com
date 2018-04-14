@@ -23,7 +23,7 @@ const Resources = () => {
                 </div>
                 <div className='right'>
                     <div className='resource-list'>
-                        <ListButton alt='sick child' target='/resources/sickChild' /><Link to='/resources/sickChild' className='list-button-label glow' page='/resources/sickChild'>Sick Child</Link>
+                        <ListButton alt='Sick Child' target='/resources/sickChild' /><Link to='/resources/sickChild' className='list-button-label glow' page='/resources/sickChild'>Sick Child</Link>
                     </div>
                     <div className='resource-list'>
                         <ListButton alt='mental health' target='/resources/mentalHealth' /><Link to='/resources/mentalHealth' className='list-button-label glow' page='/resources/mentalHealth'>Mental Health</Link>
