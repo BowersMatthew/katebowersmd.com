@@ -4,6 +4,16 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+.privacy {
+    font-size: 0.8em;
+    width: 90vw;
+    padding: 5vw;
+}
+
+.privacy-sub-heading {
+    font-size: 1em;
+}
+
 .screen-reader {
     clip: rect(1px,1px,1px,1px);
     position: absolute!important;
