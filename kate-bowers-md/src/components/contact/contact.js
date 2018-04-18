@@ -5,7 +5,7 @@ function Contact() {
         <section className='contact'>
             <h1 className='page-heading'>Contact Us</h1>
             <div className='content'>
-                <div className='fuller'>Please provide your email and a brief message to make sure you stay up to date!</div>
+                <div className='fuller'>Until the office opens, please provide your email and a brief message to make sure you stay up to date!</div>
                 <form className='fuller' action="https://contactform.prod.with-datafire.io/contact" method="post">
                     <div>
                         <h3 className='contact-label'>E-mail:</h3><br />

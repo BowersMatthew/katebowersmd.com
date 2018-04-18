@@ -33,6 +33,15 @@ html {
   content: "";
 }
 
+.content {
+  width: 100%;
+  float: left;
+}
+
+#medication {
+  margin-top: 3%;
+}
+
 h1 {
   font-size: 1.8em;
   color: rgb(136, 114, 176);
@@ -396,6 +405,7 @@ a .button-apple {
 
 table {
   margin: auto;
+  margin-top: 4%;
   width: 80vw;
   padding-left: 10vw;
   padding-right: 10vw;
@@ -408,10 +418,12 @@ th:first-child {
 
 th {
   font-weight: bold;
+  border: 1px solid black;
 }
 
 td:first-child {
   font-weight: bold;
+  border: 1px solid black;
 }
 
 td {
@@ -441,4 +453,14 @@ form {
 
 .contact-email {
   min-height: 1.5em;
+}
+
+.warning {
+  margin-top: 1em;
+  color: red;
+  font-weight: bold;
+}
+
+.advice {
+  margin-bottom: -0.5em;
 }
