@@ -4,6 +4,7 @@ const SiteMap = () => {
     return (
         <section className="site-map">
             <h2 className="page-header">Firefly Pediatrics</h2>
+            <h3>Site Map</h3>
             <div className="content">
                 <div className="left">
                     <div className="siteMap-list-item">

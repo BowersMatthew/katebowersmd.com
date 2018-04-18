@@ -97,8 +97,8 @@ const Vaccines = () => {
                             Vaccine Education Center
                     </a>
                 </div>
-                <h2>Our Vaccine Schedule</h2>
-                <div><iframe src="https://www.cdc.gov/vaccines/schedules/easy-to-read/child-shell-easyread.html" width="65%" height="1000px" frameborder="0" scrolling="auto" title="Easy-to-Read Schedule for Children, Birth through 6 Years">Easy-to-Read Schedule for Children, Birth through 6 Years</iframe></div>
+                <h2>Center for Disease Control Vaccine Schedule</h2>
+                <div className='fuller'><iframe src="https://www.cdc.gov/vaccines/schedules/easy-to-read/child-shell-easyread.html" width="65%" height="1000px" frameBorder="0" scrolling="auto" title="Easy-to-Read Schedule for Children, Birth through 6 Years">Easy-to-Read Schedule for Children, Birth through 6 Years</iframe></div>
                 <div className="left middle">
                     <UnorderedLinkList adds={adds} head='Birth' elements={birthList} />
                     <UnorderedLinkList adds={adds} head='2 Month' elements={twoMonth} />

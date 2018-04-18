@@ -9,7 +9,7 @@ function SickChild() {
             <div className='content'>
                 <div className='full'>
                     <p className='content-text'>
-                    Despite the best childcare in the world, sometimes our children will get sick. This is not a time to panic—it’s a time to be informed. The best thing you can do is to understand when you need to come into the office; and when you just need to ride out the storm.
+                        Despite the best childcare in the world, sometimes our children will get sick. This is not a time to panic—it’s a time to be informed. The best thing you can do is to understand when you need to come into the office; and when you just need to ride out the storm.
                     </p>
                 </div>
                 <div className='left'>
@@ -39,8 +39,83 @@ function SickChild() {
                     <a className='glow' href='https://goo.gl/maps/jMVQ97N7Cs12'> VCU Pediatric ER</a>
                 </div>
             </div>
+            <section className='content'>
+                <h3>Medication Dosing</h3>
+                <Table
+                    width={6}
+                    title='Acetaminophen Dosing'
+                    headings={[
+                        'Weight (lbs)',
+                        'Age',
+                        'Children\'s Liquid (160 mg / 5 ml)',
+                        'Children\'s Soft Chewable (80 mg)',
+                        'Rectal Supossitory (variable dose)',
+                        'Adult Tablets (325 mg)'
+                    ]}
+                    data={[
+                        ['6-11', '2-3 months', 'Call Your Doctor Before Giving Medicine'],
+                        ['12-17', '4-11 months', '2.5 ml', '--', '(1) 80mg', '--'],
+                        ['18-23', '9-23 months', '3.75 ml', '--', '(1) 120mg', '--'],
+                        ['24-35', '2-3 years', '5 ml', '2 chew tabs', '(2) 80mg', '--'],
+                        ['36-47', '4-5 years', '7.5 ml', '3 chew tabs', '(2) 120mg', '--'],
+                        ['48-59', '6-80 years', '10 ml', '4 chew tabs', '(1) 325mg', '1 tab/cap'],
+                        ['60-71', '9-10 years', '12.5 ml', '5 chew tabs', '(1) 325mg', '1 tab/cap'],
+                        ['72-95', '10-11 years', '15 ml', '6 chew tabs', '(1.5) 325mg', '1.5 tab/cap'],
+                        ['over 95', 'over 11 years', '20 ml', '8 chew tabs', '(1) 650mg', '2 tab/cap']
+                    ]} />
+                <Table
+                    title=''
+                    headings={[
+
+                    ]}
+                    data={[
+                        []
+                    ]}
+                />
+            </section>
         </section >
     )
+}
+
+function Table(props) {
+    const rows = [];
+    props.data.forEach(tr => {
+        rows.push(<TableRow width={props.width} tds={tr} />);
+    });
+    return (
+        <table>
+            <tr>
+                <th colspan={props.width}>{props.title}</th>
+            </tr>
+            <TableHeading width={props.width} ths={props.headings} />
+            {rows}
+        </table>
+    )
+}
+
+function TableHeading(props) {
+    const tr = [];
+    for (let i = 0; i < props.width; i++) {
+        if (i === props.ths.length - 1) {
+            tr.push(<th colspan={props.width - props.ths.length}>{props.ths[i]}</th>)
+        } else {
+            tr.push(<th>{props.ths[i]}</th>)
+        }
+    }
+
+    return <tr>{tr}</tr>;
+}
+
+function TableRow(props) {
+    const tr = [];
+    for (let i = 0; i < props.width && i < props.tds.length; i++) {
+        if (i === props.tds.length - 1) {
+            tr.push(<td colspan={props.width - props.tds.length + 1}>{props.tds[i]}</td>);
+        } else {
+            tr.push(<td>{props.tds[i]}</td>);
+        }
+    }
+    return <tr>{tr}</tr>;
 }
 
 export default SickChild

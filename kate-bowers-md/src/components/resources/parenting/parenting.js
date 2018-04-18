@@ -62,7 +62,7 @@ const Parenting = () => {
         'VLAS - IEP’s and 504 Plans',
         'VA Family Special Education Connection',
         'Wright’s Law - Special Education Law and Disability Advocacy',
-    
+
     ]
 
     const bullying = [
@@ -75,7 +75,7 @@ const Parenting = () => {
     const adds = {
         ChildDevelopmentInstitute: 'https://childdevelopmentinfo.com/about/',
         StopBullyinggov: 'https://www.stopbullying.gov/',
-        TheBullyProject:'http://www.thebullyproject.com/parents',
+        TheBullyProject: 'http://www.thebullyproject.com/parents',
         GeekDadTop10SexEdBooks: 'https://geekdad.com/2014/02/top-10-sex-ed-books/',
         Girlology: 'https://www.girlology.com/',
         GirlologyTheTalkwithElementaryAgedChild: 'https://www.girlology.com/talking-about-sex-your-elementary-aged-child',
@@ -99,11 +99,11 @@ const Parenting = () => {
         BookUnconditionalParenting: 'https://www.amazon.com/Unconditional-Parenting-Moving-Rewards-Punishments-ebook/dp/B000GCFD72/ref=sr_1_1?s=books&ie=UTF8&qid=1476616609&sr=1-1&keywords=unconditional+parenting+by+alfie+kohn',
         BookYourChildsHealthTheParentsOneStopReferenceGuide: 'https://www.amazon.com/Your-Childs-Health-Emergencies-Development/dp/0553383698/ref=sr_1_1?s=books&ie=UTF8&qid=1523236802&sr=1-1&keywords=barton+schmitt',
         HealthyChildrenSwaddling: 'https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/Good-Night-Sleep-Tight.aspx',
-        HealthyChildrenHomeApneaMonitors:   'https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/Home-Apnea-Monitors-for-SIDs.aspx',
+        HealthyChildrenHomeApneaMonitors: 'https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/Home-Apnea-Monitors-for-SIDs.aspx',
         JanetLansburySubtletiesofSleep: 'http://www.janetlansbury.com/2014/02/the-subtleties-of-baby-sleep-4-important-things-to-know/',
         BigSkyLullabySuccessfulSleepSchedule: 'http://bigskylullaby.com/2016/10/06/baby-sleep-schedule/',
         HealthyChildrenNursingChecklist: 'https://www.healthychildren.org/English/ages-stages/baby/breastfeeding/Pages/A-Breastfeeding-Checklist-Are-You-Nursing-Correctly.aspx',
-        HealthyChildrenToddlerServingSizes:'https://www.healthychildren.org/English/ages-stages/toddler/nutrition/Pages/Serving-Sizes-for-Toddlers.aspx',
+        HealthyChildrenToddlerServingSizes: 'https://www.healthychildren.org/English/ages-stages/toddler/nutrition/Pages/Serving-Sizes-for-Toddlers.aspx',
         ZerotoThreeTodderTantrums101: 'https://www.zerotothree.org/resources/1790-toddler-tantrums-101-why-they-happen-and-what-you-can-do',
         KidsHealthTantrums: 'https://kidshealth.org/en/parents/tantrums.html',
         ChildMindWhyDoKidsHaveTantrums: 'https://childmind.org/article/why-do-kids-have-tantrums-and-meltdowns/',
@@ -118,10 +118,10 @@ const Parenting = () => {
         <section className="parenting">
             <h1 className="page-header">Parenting</h1>
             <div className="content">
-            <p className="fuller">There is no one-size-fits-all advice when it comes to parenting. What works for other people's children may or may not work for yours. Kids, and their parents, in every family have different personalities. <br/>Getting a variety of ideas from different perspectives can be very helpful. Certain ideologies and practices will fit your family well for a few seasons or during a certain developmental stage, but will then need to be modified or replaced as time goes on. The real challenge of parenthood is learning to evolve and be adaptable. <br/>Please, try not to agonize over doing it "right"! Some days you'll feel like a boss, some days like a failure. This still happens when you're a pediatrician and a parent. Families are messy, but you'll find your way. Here are resources for you to delve into with an open mind.
-   </p>
+                <div className="full">
+                    <p className="content-text">There is no one-size-fits-all advice when it comes to parenting. What works for other people's children may or may not work for yours. Kids, and their parents, in every family have different personalities. <br />Getting a variety of ideas from different perspectives can be very helpful. Certain ideologies and practices will fit your family well for a few seasons or during a certain developmental stage, but will then need to be modified or replaced as time goes on. The real challenge of parenthood is learning to evolve and be adaptable. <br />Please, try not to agonize over doing it "right"! Some days you'll feel like a boss, some days like a failure. This still happens when you're a pediatrician and a parent. Families are messy, but you'll find your way. Here are resources for you to delve into with an open mind.</p>
+                </div>
             </div>
-            <div className='fuller'>
             <div className="left">
                 <UnorderedLinkedList adds={adds} head='General Parenting' elements={generalParenting} />
                 <UnorderedLinkedList adds={adds} head='Infant Sleep' elements={infantSleep} />
@@ -131,11 +131,10 @@ const Parenting = () => {
                 <UnorderedLinkedList adds={adds} head='Potty Training' elements={pottyTraining} />
             </div>
             <div className="right">
-            <UnorderedLinkedList adds={adds} head='Bullying' elements={bullying} />
+                <UnorderedLinkedList adds={adds} head='Bullying' elements={bullying} />
                 <UnorderedLinkedList adds={adds} head='Bodies and Reproduction' elements={bodiesandReproduction} />
-                <UnorderedLinkedList adds={adds} head='School Accomodations' elements={schoolAccomodations} />            
+                <UnorderedLinkedList adds={adds} head='School Accomodations' elements={schoolAccomodations} />
                 <h3>Divorce/Separation</h3>
-            </div>
             </div>
         </section>
     )
