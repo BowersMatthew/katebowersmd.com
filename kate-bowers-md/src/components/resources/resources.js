@@ -7,7 +7,9 @@ const Resources = () => {
         <section className='health-resources'>
             <h1 className='page-header'>Health Resources</h1>
             <div className='content'>
-            <p className='fuller'>Sometimes it's hard to know where to go on the internet for good information. These links are great jumping-off points for different health topics from websites I trust. </p>
+                <div className='full'>
+                    <p className='content-text'>Sometimes it's hard to know where to go on the internet for good information. These links are great jumping-off points for different health topics from websites I trust. </p>
+                </div>
                 <div className='left'>
                     <div className='resource-list'>
                         <ListButton alt='vaccines' target='/resources/vaccines' /><Link to='/resources/vaccines' className='list-button-label glow' page='/resources/vaccines'>Vaccines</Link>
@@ -18,7 +20,7 @@ const Resources = () => {
                     </div>
                     <div className='resource-list'>
                         <ListButton alt='development' target='/resources/development' /><Link to='/resources/development' className='list-button-label glow'
-                            page='/resources/development'>Growth and Development</Link>
+                            page='/resources/development'>Growth & Development</Link>
                     </div>
                 </div>
                 <div className='right'>
