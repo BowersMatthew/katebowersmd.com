@@ -12,7 +12,7 @@ function SickChild() {
                         Despite the best childcare in the world, sometimes our children will get sick. This is not a time to panic—it’s a time to be informed. The best thing you can do is to understand when you need to come into the office; and when you just need to ride out the storm.
                     </p>
                 </div>
-                <div className='left'>
+                <div className='left middle'>
                     <h3>KidsDoc Symptom Checker</h3>
                     <p className='fuller'>This app costs $1.99, and I highly recommend it. KidsDoc was designed using Barton-Schmitt protocols implemented by pediatricians and nurses all over the United States and Canada. It’s a great resource for advice on home care, as well as when to call the doctor or 911.</p><br />
                     <a href='http://itunes.apple.com/us/app/kidsdoc-from-american-academy/id373964536?mt=8'>
@@ -31,7 +31,7 @@ function SickChild() {
                         <img alt='Get it on Google Play' src={google} />
                     </a>
                 </div>
-                <div className='right'>
+                <div className='right middle'>
                     <h3>Emergency Care</h3>
                     <p className='fuller'>If you do need to take your child to the emergency room, these three hospitals are the only hospitals that staff emergency-room physicians specializing in pediatric emergency care. It is our preference that if you are driving yourself to an emergency room, that you go to one of these three locations.</p><br />
                     <a className='glow' href='https://goo.gl/maps/UgXonoxhiYt'> St. Mary's Pediatric ER</a><br />
@@ -47,6 +47,7 @@ function SickChild() {
                     <p className='advice'> In Motrin's case, the medication concentration is different in the infant's and children's versions</p>
                     <p className='warning'>Do not give children Asprin (BC Powders, Alkaseltzer, and others) due to risk of a fatal liver condition called Reye Syndrome</p>
                 </div>
+                <div id='table-warning'>Turn your phone sideways to view dosing guide.</div>
                 <Table
                     width={6}
                     title='Acetaminophen(Tylenol) Dosing'
@@ -99,15 +100,19 @@ function SickChild() {
 function Table(props) {
     const rows = [];
     props.data.forEach(tr => {
-        rows.push(<TableRow width={props.width} tds={tr} />);
+        rows.push(<TableRow key={tr[0]} width={props.width} tds={tr} />);
     });
     return (
         <table>
-            <tr>
-                <th colspan={props.width}>{props.title}</th>
-            </tr>
-            <TableHeading width={props.width} ths={props.headings} />
-            {rows}
+            <thead>
+                <tr>
+                    <th colSpan={props.width}>{props.title}</th>
+                </tr>
+                <TableHeading width={props.width} ths={props.headings} />
+            </thead>
+            <tbody>
+                {rows}
+            </tbody>
         </table>
     )
 }
@@ -116,9 +121,9 @@ function TableHeading(props) {
     const tr = [];
     for (let i = 0; i < props.width; i++) {
         if (i === props.ths.length - 1) {
-            tr.push(<th colspan={props.width - props.ths.length}>{props.ths[i]}</th>)
+            tr.push(<th key={i} colSpan={props.width - props.ths.length}>{props.ths[i]}</th>)
         } else {
-            tr.push(<th>{props.ths[i]}</th>)
+            tr.push(<th key={i}>{props.ths[i]}</th>)
         }
     }
 
@@ -129,9 +134,9 @@ function TableRow(props) {
     const tr = [];
     for (let i = 0; i < props.width && i < props.tds.length; i++) {
         if (i === props.tds.length - 1) {
-            tr.push(<td colspan={props.width - props.tds.length + 1}>{props.tds[i]}</td>);
+            tr.push(<td key={i} colSpan={props.width - props.tds.length + 1}>{props.tds[i]}</td>);
         } else {
-            tr.push(<td>{props.tds[i]}</td>);
+            tr.push(<td key={i}>{props.tds[i]}</td>);
         }
     }
     return <tr>{tr}</tr>;
