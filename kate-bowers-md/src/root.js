@@ -17,24 +17,26 @@ import SickChild from './components/resources/sick-child/sick-child';
 import MentalHealth from './components/resources/mental-health/mental-health';
 import SiteMap from './components/site-map/site-map';
 import Contact from './components/contact/contact';
+import Portal from './components/portal';
 
 const Root = (props) => {
   return (
     <Router>
       <App>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/newPatients" component={NewPatients} />
-          <Route exact path="/resources" component={Resources} />
-          <Route exact path="/resources/vaccines" component={Vaccines} />
-          <Route exact path="/resources/parenting" component={Parenting} />
-          <Route exact path="/resources/development" component={Development} />
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/newPatients' component={NewPatients} />
+          <Route exact path='/resources' component={Resources} />
+          <Route exact path='/resources/vaccines' component={Vaccines} />
+          <Route exact path='/resources/parenting' component={Parenting} />
+          <Route exact path='/resources/development' component={Development} />
           <Route exact path='/resources/sickChild' component={SickChild} />
           <Route exact path='/resources/mentalHealth' component={MentalHealth} />
           <Route path='/contact' component={Contact} />
-          <Route path="/site-map" component={SiteMap} />
-          <Route path="*" component={Home} />
+          <Route path='/site-map' component={SiteMap} />
+          <Route path='/portal' component={Portal} />
+          <Route path='*' component={Home} />
         </Switch>
       </App>
     </Router>
