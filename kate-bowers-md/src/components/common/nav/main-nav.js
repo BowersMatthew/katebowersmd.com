@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import NavLink from './nav-link';
+import { withRouter, Link } from 'react-router-dom';
 import { Pages } from './pages';
 import Hamburger from '../../../resources/hamburger.svg';
 
@@ -16,17 +15,22 @@ class MainNav extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    if (this.state.clicked) {
-      this.setState(prevState => ({
-        clicked: false, 
-        className: 'main-nav '
-      }));
+  handleClick(e) {
+    e.persist();
+    if (e.nativeEvent instanceof FocusEvent) {
+      return;
     } else {
-      this.setState(prevState => ({
-        clicked: true, 
-        className: 'main-nav responsive-nav-link '
-      }));
+      if (this.state.clicked) {
+        this.setState(prevState => ({
+          clicked: false,
+          className: 'main-nav '
+        }));
+      } else {
+        this.setState(prevState => ({
+          clicked: true,
+          className: 'main-nav responsive-nav-link '
+        }));
+      }
     }
   }
 
@@ -39,12 +43,12 @@ class MainNav extends Component {
       if (page.link === current || (page.link === '/resources' && current.match("/resources"))) {
         className += 'active-page';
       }
-      links.push(<NavLink key={page.id} page={page} className={className} />)
+      links.push(<Link onClick={this.handleClick} key={page.id} to={page.link} className={className}>{page.name}</Link>)
     });
     return (
       <nav>
         <img onClick={this.handleClick} className='hamburger' src={Hamburger} alt='responsive menu button' />
-        <div>{links}</div>
+        <div onBlur={this.handleClick}>{links}</div>
       </nav>
     )
   }
