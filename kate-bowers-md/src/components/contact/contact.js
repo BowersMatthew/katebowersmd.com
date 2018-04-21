@@ -13,7 +13,7 @@ function Contact() {
                     </div>
                     <div>
                         <h3 className='contact-label'>Message:</h3><br />
-                        <textarea className='contact-message fuller' name="message">Please add me to your email list!</textarea>
+                        <textarea className='contact-message fuller' name="message" defaultValue='Please add me to your email list!'></textarea>
                     </div>
                     <input type="submit" value="Submit" />
                 </form>
