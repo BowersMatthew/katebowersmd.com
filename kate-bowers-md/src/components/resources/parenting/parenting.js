@@ -70,9 +70,16 @@ const Parenting = () => {
         'StopBullying.gov',
     ]
 
+    const divorce = [
+        'Co-parenting vs. Parallel Parenting',
+        'Adjusting to Divorce'
+    ]
+
     // links
     // const adds ={noSpaceName: 'https://...'}
     const adds = {
+        AdjusttingtoDivorce: 'https://www.healthychildren.org/English/family-life/family-dynamics/types-of-families/Pages/Adjusting-to-Divorce.aspx',
+        CoparentingvsParallelParenting: 'http://www.divorcemag.com/blog/difference-between-co-parenting-and-parallel-parenting-',
         ChildDevelopmentInstitute: 'https://childdevelopmentinfo.com/about/',
         StopBullyinggov: 'https://www.stopbullying.gov/',
         TheBullyProject: 'http://www.thebullyproject.com/parents',
@@ -134,7 +141,7 @@ const Parenting = () => {
                 <UnorderedLinkedList adds={adds} head='Bullying' elements={bullying} />
                 <UnorderedLinkedList adds={adds} head='Bodies and Reproduction' elements={bodiesandReproduction} />
                 <UnorderedLinkedList adds={adds} head='School Accomodations' elements={schoolAccomodations} />
-                <h3>Divorce/Separation</h3>
+                <UnorderedLinkedList adds={adds} head='Divorce/Separation' elements={divorce} />
             </div>
         </section>
     )
