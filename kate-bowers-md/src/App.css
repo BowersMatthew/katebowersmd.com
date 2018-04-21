@@ -44,7 +44,7 @@ html {
 
 h1 {
   font-size: 1.8em;
-  color: rgb(136, 114, 176);
+  color: rgb(199, 131, 132);
 }
 
 h2 {
@@ -77,13 +77,16 @@ li {
 .App-header {
   background-image: url('./resources/Header.jpg');
   background-size: cover;
-  height: auto;
+  background-position-x: 66%;
+  height: 20vh;
   padding: 20px;
   color: rgb(180, 99, 76);
 }
 
 .App-title {
-  font-size: 2em;
+  font-size: 3em;
+  background-position-y: center;
+  font-family: cochin;
   display: inline-block;
   color: rgb(250, 184, 128);
   padding: 0.2em;
@@ -131,10 +134,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-nav a:visited {
-  color: black;
-}
-
 .left {
   margin: auto;
   width: 90vw;
@@ -152,16 +151,12 @@ iframe {
 
 .left.middle {
   min-width: 70%;
-  margin: 0;
-  padding-left: 20%;
-  padding-right: 10%
+  margin: auto;
 }
 
 .right.middle {
   width: 70%;
-  margin: 0;
-  padding-left: 20%;
-  padding-right: 10%;
+  margin: auto;
 }
 
 @media screen and (min-width: 800px) {
@@ -209,6 +204,12 @@ iframe {
     width: 100%;
     display: block;
   }
+  .resource-list:first-child {
+    text-align: left;
+    align-content: left;
+    margin-left: 7vw;
+    margin-top: 5vw;
+  }
 }
 
 .heading-left {
@@ -238,24 +239,16 @@ iframe {
   .staff-about-picture {
     width: 100%;
   }
+  .resource-list {
+    text-align: left;
+    align-content: left;
+    margin-left: 7vw;
+    margin-top: 7vh;
+  }
 }
 
 .location-map {
   min-width: auto;
-}
-
-.resource-list:first-child {
-  text-align: left;
-  align-content: left;
-  margin-left: 7vw;
-  margin-top: 5vw;
-}
-
-.resource-list {
-  text-align: left;
-  align-content: left;
-  margin-left: 7vw;
-  margin-top: 7vh;
 }
 
 .list-button {
@@ -286,8 +279,12 @@ iframe {
 .glow {
   padding: 6px;
   margin: -0.5em;
-  display: block;
+  display: inline;
   text-decoration: underline;
+}
+
+li.glow {
+  display: block;
 }
 
 .glow:hover {
@@ -314,7 +311,7 @@ iframe {
 }
 
 .siteMap-secondary-section {
-  font-size: 1.2em;
+  font-size: 1.0em;
   text-align: center;
 }
 
@@ -322,15 +319,54 @@ iframe {
   margin-bottom: 2vh;
 }
 
-.page-footer-image {
-  content: "";
-  background: url('./resources/bottom-shape.png') repeat-x;
-  height: 200px;
-  background-size: 49.5vw;
-  bottom: 0px;
-  display: flex;
-  align-items: flex-end;
-  clear: both;
+@media screen and (min-width: 00px) {
+  .page-footer-image {
+    content: "";
+    background: url('./resources/bottom-shape.png') repeat-x;
+    height: 100px;
+    background-size: 49.5vw;
+    bottom: 0px;
+    display: flex;
+    align-items: flex-end;
+    clear: both;
+  }
+}
+
+
+@media screen and (min-width: 300px) {
+  .page-footer-image {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .page-footer-image {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .page-footer-image {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .page-footer-image {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .page-footer-image {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer-image {
+    height: 200px;
+  }
 }
 
 .page-footer-text {
@@ -391,44 +427,41 @@ a .button-apple {
     line-height: 2em !important;
     margin: 2px 0px 0px 0px;
   }
-  .left.middle {
-    margin-left: auto;
-    width: 100%;
-    min-width: 100%;
-  }
-  .right.middle {
-    margin-right: auto;
-    width: 100%;
-    min-width: 100%;
-  }
 }
 
 table {
-  margin: auto;
-  margin-top: 4%;
-  width: 80vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  display: none;
 }
 
-th:first-child {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-th {
-  font-weight: bold;
-  border: 1px solid black;
-}
-
-td:first-child {
-  font-weight: bold;
-  border: 1px solid black;
-}
-
-td {
-  width: calc(80vw/6);
-  border: 1px solid black;
+@media screen and (min-width:500px) {
+  #table-warning {
+    display: none;
+  }
+  table {
+    display: block;
+    font-size: 0.8em;
+    margin: auto;
+    margin-top: 4%;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  th:first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  th {
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  td:first-child {
+    font-weight: bold;
+    border: 1px solid black;
+  }
+  td {
+    width: calc(80vw/6);
+    border: 1px solid black;
+  }
 }
 
 .contact {
@@ -463,4 +496,20 @@ form {
 
 .advice {
   margin-bottom: -0.5em;
+}
+
+#cdc-vaccine {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  table {
+    font-size: 1em;
+  }
+  #cdc-vaccine {
+    display: block;
+  }
+  #cdc-vaccine-link {
+    display: none;
+  }
 }
