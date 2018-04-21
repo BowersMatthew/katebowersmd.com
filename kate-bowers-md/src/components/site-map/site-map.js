@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const SiteMap = () => {
     return (
         <section className="site-map">
@@ -8,24 +8,39 @@ const SiteMap = () => {
             <div className="content">
                 <div className="left">
                     <div className="siteMap-list-item">
-                        <a className="siteMap-main-section glow" href="/about">About Us</a>
+                        <Link className="siteMap-main-section glow" to="/about">About Us</Link>
                     </div>
                     <div className="siteMap-list-item">
-                        <a className="siteMap-main-section glow" href="/newPatients">New Patients</a><br />
+                        <Link className="siteMap-main-section glow" to="/newPatients">New Patients</Link><br />
                     </div>
                     <div className='siteMap-list-item'>
-                        <a className='siteMap-main-section glow' href='/resources/sickChild'>SickChild</a><br />
+                        <Link className='siteMap-main-section glow' to='/resources/sickChild'>SickChild</Link><br />
+                    </div>
+                    <div className="siteMap-list-item">
+                        <Link className="siteMap-main-section glow" to='/contact'>Contact Us</Link>
+                    </div>
+                    <div className="siteMap-list-item">
+                        <Link className="siteMap-main-section glow" to='/portal'>Portal</Link>
                     </div>
                 </div>
                 <div className="right">
                     <div className="siteMap-list-item">
-                        <a className="siteMap-main-section glow" href="/resources">Health Resources</a><br />
+                        <Link className="siteMap-main-section glow" to="/resources">Health Resources</Link><br />
                     </div>
                     <div className="siteMap-list-item">
-                        <a className="siteMap-secondary-section glow" href="/resources/vaccines">Vaccines</a>
+                        <Link className="siteMap-secondary-section glow" to="/resources/vaccines">Vaccines</Link>
                     </div>
                     <div className="siteMap-list-item">
-                        <a className="siteMap-secondary-section glow" href="/resources/development">Growth and Development</a>
+                        <Link className="siteMap-secondary-section glow" to="/resources/parenting">Parenting</Link>
+                    </div>
+                    <div className="siteMap-list-item">
+                        <Link className="siteMap-secondary-section glow" to='/resources/development'>Growth and Development</Link>
+                    </div>
+                    <div className="siteMap-list-item">
+                        <Link className="siteMap-secondary-section glow" to='/resources/sickChild'>Sick Child</Link>
+                    </div>
+                    <div className="siteMap-list-item">
+                        <Link className="siteMap-secondary-section glow" to='/resources/mentalHealth'>Mental Health</Link>
                     </div>
                 </div>
             </div>
