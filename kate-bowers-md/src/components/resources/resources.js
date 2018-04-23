@@ -7,8 +7,8 @@ const Resources = () => {
         <section className='health-resources'>
             <h1 className='page-header'>Health Resources</h1>
             <div className='content'>
-                <div className='full'>
-                    <p className='content-text'>Sometimes it's hard to know where to go on the internet for good information. These links are great jumping-off points for different health topics from websites I trust. </p>
+                <div className='fuller'>
+                    <p className='content-text center-align'>Sometimes it's hard to know where to go on the internet for good information. These links are great jumping-off points for different health topics.</p>
                 </div>
                 <div className='left'>
                     <div className='resource-list'>
