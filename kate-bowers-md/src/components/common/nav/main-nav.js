@@ -18,15 +18,17 @@ class MainNav extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener('mouseup', this.handleOutsideClick);
+    document.addEventListener('click', this.handleOutsideClick);
+    document.addEventListener('touchstart', this.handleOutsideClick);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('mouseup', this.handleOutsideClick);
+    document.removeEventListener('click', this.handleOutsideClick);
+    document.addEventListener('touchstart', this.handleOutsideClick);
   }
 
   handleOutsideClick(e) {
-    if (this.wrapper && !this.wrapper.contains(e.target)) {
+    if (this.wrapper && !this.wrapper.contains(e.target) && this.state.clicked) {
       this.handleClick(e);
     }
   }
