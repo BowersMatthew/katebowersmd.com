@@ -13,10 +13,29 @@ class MainNav extends Component {
       className: 'main-nav '
     }
     this.handleClick = this.handleClick.bind(this);
+    this.setWrapper = this.setWrapper.bind(this);
+    this.handleOutsideClick = this.handleOutsideClick.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener('mouseup', this.handleOutsideClick);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mouseup', this.handleOutsideClick);
+  }
+
+  handleOutsideClick(e) {
+    if (this.wrapper && !this.wrapper.contains(e.target)) {
+      this.handleClick(e);
+    }
+  }
+
+  setWrapper(node) {
+    this.wrapper = node;
   }
 
   handleClick(e) {
-    e.persist();
     if (e.nativeEvent instanceof FocusEvent) {
       return;
     } else {
@@ -46,9 +65,11 @@ class MainNav extends Component {
       links.push(<Link onClick={this.handleClick} key={page.id} to={page.link} className={className}>{page.name}</Link>)
     });
     return (
-      <nav>
+      <nav ref={this.setWrapper}>
+        <div className='nav-menu-container'>
         <img onClick={this.handleClick} className='hamburger' src={Hamburger} alt='responsive menu button' />
-        <div onBlur={this.handleClick}>{links}</div>
+        <div className='nav-link-area'>{links}</div>
+        </div>
       </nav>
     )
   }
