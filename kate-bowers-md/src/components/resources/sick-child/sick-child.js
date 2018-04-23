@@ -14,7 +14,7 @@ function SickChild() {
                 </div>
                 <div className='left middle'>
                     <h3>KidsDoc Symptom Checker</h3>
-                    <p className='fuller'>This app costs $1.99, and I highly recommend it. KidsDoc was designed using Barton-Schmitt protocols implemented by pediatricians and nurses all over the United States and Canada. It’s a great resource for advice on home care, as well as when to call the doctor or 911.</p><br />
+                    <p className='fuller'>This app costs $1.99, and I highly recommend it. KidsDoc was designed using the Barton-Schmitt protocols used by pediatricians and nurses all over the United States and Canada. It’s a great resource for advice on home care, when to call the doctor or and when to call 911.</p><br />
                     <a href='http://itunes.apple.com/us/app/kidsdoc-from-american-academy/id373964536?mt=8'>
                         <img alt='Get it on the App Store' src={apple} />
                     </a>
@@ -23,7 +23,7 @@ function SickChild() {
                     </a>
 
                     <h3>Poison Control App</h3>
-                    <p className='fuller'>There's no substitute for actually calling poison control, but this app is a fantastic resource for a first glance if you're not sure what your child ingested is harmful.</p><br />
+                    <p className='fuller'>There's no substitute for actually calling poison control, but this app is a fantastic resource for a first glance.</p><br />
                     <a href='https://itunes.apple.com/us/app/id959075009'>
                         <img alt='Get it on the App Store' src={apple} />
                     </a>
@@ -44,7 +44,7 @@ function SickChild() {
                     <h3>Medication Dosing</h3>
                     <p className='advice'>Avoid dosing mistakes! Do not buy the "infant" version of acetaminophen or ibuprofen. </p>
                     <p className='advice'>The infant version of acetaminophen (tylenol) is exactly the same medication as the children's version, but they charge you more for a tiny bottle.</p>
-                    <p className='advice'> In Motrin's case, the medication concentration is different in the infant's and children's versions</p>
+                    <p className='advice'> In Motrin's case, the medication concentration is different in the infant's and children's versions</p><br/>
                     <p className='warning'>Do not give children Asprin (BC Powders, Alkaseltzer, and others) due to risk of a fatal liver condition called Reye Syndrome</p>
                 </div>
                 <div id='table-warning'>Turn your phone sideways to view dosing guide.</div>
@@ -69,7 +69,7 @@ function SickChild() {
                         ['60-71', '9-10 years', '12.5 ml', '2.5 chew tabs', '(1) 325mg', '1 tab/cap'],
                         ['72-95', '10-11 years', '15 ml', '3 chew tabs', '(1.5) 325mg', '1.5 tab/cap'],
                         ['over 95', 'over 11 years', '20 ml', '4 chew tabs', '(1) 650mg', '2 tab/cap']
-                    ]} />
+                    ]} /><br/>
                 <Table
                     width={5}
                     title='Ibuprofen(Advil, Motrin) Dosing'
