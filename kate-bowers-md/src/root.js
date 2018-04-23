@@ -18,6 +18,7 @@ import MentalHealth from './components/resources/mental-health/mental-health';
 import SiteMap from './components/site-map/site-map';
 import Contact from './components/contact/contact';
 import Portal from './components/portal';
+import { VaccineAutism } from './components/resources/parenting/vaccines-autism';
 
 const Root = (props) => {
   return (
@@ -30,6 +31,7 @@ const Root = (props) => {
           <Route exact path='/resources' component={Resources} />
           <Route exact path='/resources/vaccines' component={Vaccines} />
           <Route exact path='/resources/parenting' component={Parenting} />
+          <Route exact path='/resources/parenting/vaccines-autism' component={VaccineAutism} />
           <Route exact path='/resources/development' component={Development} />
           <Route exact path='/resources/sickChild' component={SickChild} />
           <Route exact path='/resources/mentalHealth' component={MentalHealth} />
