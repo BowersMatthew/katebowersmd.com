@@ -1,5 +1,6 @@
 import React from 'react';
 import UnorderedLinkedList from '../../common/link-list/unordered-link-list';
+import {Link} from 'react-router-dom';
 
 const Parenting = () => {
     const infantSleep = [
@@ -38,6 +39,8 @@ const Parenting = () => {
 
     const generalParenting = [
         'Child Development Institute',
+        'Aha Parenting - Discipline That Works',
+        'Aha Parenting - Positive Parenting',
         'Center on the Social and Emotional Foundations for Early Learning - Booklist',
         '(Book) The Science of Mom - A Research Based Guide to Your Baby’s First Year',
         '(Book) How to Talk So Kids Will Listen and Listen So Kids Will Talk',
@@ -72,13 +75,42 @@ const Parenting = () => {
 
     const divorce = [
         'Co-parenting vs. Parallel Parenting',
-        'Adjusting to Divorce'
+        'Adjusting to Divorce',
+        'Child Mind - Don’t Let Your Kids Be Casualties of Divorce',
+    ]
+
+    const socialMedia = [
+        'Child Mind - Social Media and Self Doubt',
+        'Healthy Children - Kids and Tech Tips for Parents',
+        'Healthy Children - Talking about Sexting',
+        'Healthy Children - Talking with Teens about Safe Media Use',
+    ]
+
+    const screenTime = [
+        'Healthy Children - Healthy Habits for Babies and Toddlers',
+        'Common Sense Media - Reviews'
+    ]
+
+    const autism = [
+        'Autism Speaks - Resource Library',
+        'Autism  Speaks - What is Autism?',
     ]
 
     // links
     // const adds ={noSpaceName: 'https://...'}
     const adds = {
-        AdjusttingtoDivorce: 'https://www.healthychildren.org/English/family-life/family-dynamics/types-of-families/Pages/Adjusting-to-Divorce.aspx',
+        AutismSpeaksWhatisAutism: 'https://www.autismspeaks.org/what-autism',
+        AutismSpeaksResourceLibrary: 'https://www.autismspeaks.org/family-services/resource-library/websites-families',
+        AhaParentingDisciplineThatWorks: 'http://www.ahaparenting.com/parenting-tools/discipline',
+        AhaParentingPositiveParenting: 'http://www.ahaparenting.com/parenting-tools/positive-discipline/use-positive-discipline',
+        CommonSenseMediaReviews: 'https://www.commonsensemedia.org/reviews',
+        HealthyChildrenTalkingwithTeensaboutSafeMediaUse: 'https://www.healthychildren.org/English/family-life/Media/Pages/Points-to-Make-With-Your-Teen-About-Media.aspx',
+        HealthyChildrenTalkingaboutSexting: 'https://www.healthychildren.org/English/family-life/Media/Pages/The-New-Problem-of-Sexting.aspx',
+        HealthyChildrenKidsandTechTipsforParents: 'https://www.healthychildren.org/English/family-life/Media/Pages/Tips-for-Parents-Digital-Age.aspx',
+        HealthyChildrenHealthyHabitsforBabiesandToddlers: 'https://www.healthychildren.org/English/family-life/Media/Pages/Healthy-Digital-Media-Use-Habits-for-Babies-Toddlers-Preschoolers.aspx',
+        ChildMindSocialMediaandSelfDoubt: 'https://childmind.org/article/social-media-and-self-doubt/',
+        ChildMindDontLetYourKidsBeCasualtiesofDivorce: 'https://childmind.org/article/dont-let-your-kids-be-casualties-of-divorce/',
+        AdjustingtoDivorce: 'https://www.healthychildren.org/English/family-life/family-dynamics/types-of-families/Pages/Adjusting-to-Divorce.aspx',
         CoparentingvsParallelParenting: 'http://www.divorcemag.com/blog/difference-between-co-parenting-and-parallel-parenting-',
         ChildDevelopmentInstitute: 'https://childdevelopmentinfo.com/about/',
         StopBullyinggov: 'https://www.stopbullying.gov/',
@@ -126,7 +158,8 @@ const Parenting = () => {
             <h1 className="page-header">Parenting</h1>
             <div className="content">
                 <div className="full">
-                    <p className="content-text">There is no one-size-fits-all advice when it comes to parenting. What works for other people's children may or may not work for yours. Kids, and their parents, in every family have different personalities. <br />Getting a variety of ideas from different perspectives can be very helpful. Certain ideologies and practices will fit your family well for a few seasons or during a certain developmental stage, but will then need to be modified or replaced as time goes on. The real challenge of parenthood is learning to evolve and be adaptable. <br />Please, try not to agonize over doing it "right"! Some days you'll feel like a boss, some days like a failure. This still happens when you're a pediatrician and a parent. Families are messy, but you'll find your way. Here are resources for you to delve into with an open mind.</p>
+                    <p className="content-text">There is no one-size-fits-all advice when it comes to parenting. What works for other people's children may or may not work for yours. Kids, and their parents, in every family have different personalities. Getting a variety of ideas from different perspectives can be very helpful. Certain ideologies and practices will fit your family well for a few seasons or during a certain developmental stage, but will then need to be modified or replaced as time goes on. The real challenge of parenthood is learning to evolve and be adaptable.</p> 
+                    <p className="content-text">Please, try not to agonize over doing it "right"! Some days you'll feel like a boss, some days like a failure. This still happens when you're a pediatrician and a parent. Families are messy, but you'll find your way. Here are resources for you to delve into with an open mind.</p>
                 </div>
             </div>
             <div className="left">
@@ -138,10 +171,16 @@ const Parenting = () => {
                 <UnorderedLinkedList adds={adds} head='Potty Training' elements={pottyTraining} />
             </div>
             <div className="right">
+                <UnorderedLinkedList adds={adds} head='Autism' elements={autism} />
+                <div className='list-addon'>
+                    <ul><li className='glow'><Link to="/resources/parenting/vaccines-autism">Vaccines and Autism</Link></li></ul>
+                </div>
                 <UnorderedLinkedList adds={adds} head='Bullying' elements={bullying} />
                 <UnorderedLinkedList adds={adds} head='Bodies and Reproduction' elements={bodiesandReproduction} />
                 <UnorderedLinkedList adds={adds} head='School Accomodations' elements={schoolAccomodations} />
                 <UnorderedLinkedList adds={adds} head='Divorce/Separation' elements={divorce} />
+                <UnorderedLinkedList adds={adds} head='Social Media' elements={socialMedia} />
+                <UnorderedLinkedList adds={adds} head='Screen Time' elements={screenTime} />
             </div>
         </section>
     )
