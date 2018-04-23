@@ -19,7 +19,11 @@ const About = () => {
                     <p className="content-text">
                     Firefly Pediatrics was designed from the ground up, with 21st-century families in mind. Our aim is to provide modern, evidence-based care for children and young adults from birth through college while facilitating easy electronic communication and reducing paper use. Our electronic medical records were designed for pediatric use and allow us to take better, more seamless care of your family.
                     </p>
-
+                    <div>
+                        <h3>Hours of Operation</h3>
+                        <p>Mon-Fri: TBD</p>
+                        <p>Sat: TBD</p>
+                    </div>
                     <div>
                         <h3>Our Office</h3>
                         <p>2937 Fox Trace Ln, Midlothian, VA 23112</p>
