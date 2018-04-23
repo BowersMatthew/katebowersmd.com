@@ -10,7 +10,8 @@ class Header extends Component {
       return (
         <a href="/">
           <header className="App-header">
-            <h1 className="App-title">Firefly Pediatrics</h1>
+            <h1 className="App-title">Firefly</h1><br/>
+            <h1 className="App-sub-title">Pediatrics</h1>
           </header>
         </a>
       );
