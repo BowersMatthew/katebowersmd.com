@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Contact() {
     return (
@@ -17,7 +18,7 @@ function Contact() {
                     </div>
                     <input type="submit" value="Submit" />
                 </form>
-                <a href="privacy.html">privacy statement</a>
+                <Link to='/contact/privacy'>privacy statement</Link>
             </div>
         </section>
     )

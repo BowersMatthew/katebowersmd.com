@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <div>
             <div className="page-footer-image"></div>
-            <div className="page-footer-text">Firefly Pediatrics<br />2937 Fox Trace Ln<br /> Midlothian, VA 23112
+            <div className="page-footer-text">Firefly Pediatrics<br />2937 Fox Chase Ln<br /> Midlothian, VA 23112
             <FooterLinks />
             </div>
         </div>

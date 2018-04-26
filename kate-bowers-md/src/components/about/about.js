@@ -26,7 +26,7 @@ const About = () => {
                     </div>
                     <div>
                         <h3>Our Office</h3>
-                        <p>2937 Fox Trace Ln, Midlothian, VA 23112</p>
+                        <p>2937 Fox Chase Ln, Midlothian, VA 23112</p>
                         <iframe title="foxtrace-office-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.4707859183463!2d-77.65414568469166!3d37.44960487981987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b173d66a655555%3A0x9476a37a32f4f01f!2s2937+Fox+Chase+Ln%2C+Midlothian%2C+VA+23112!5e0!3m2!1sen!2sus!4v1522616694584" width="600" height="450" frameBorder="0" style={{border:0}} allowFullScreen></iframe>
                     </div>
                 </div>
