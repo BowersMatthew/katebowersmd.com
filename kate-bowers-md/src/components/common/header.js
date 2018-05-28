@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
+import bug from '../../bug.png';
 import '../../App.css';
 import { withRouter } from 'react-router-dom';
+import logo from '../../resources/Firefly_Logo_White.png';
 
 class Header extends Component {
+
   render() {
     const { location } = this.props;
     if (location.pathname !== '/') {
       return (
         <a href="/">
           <header className="App-header">
-            <h1 className="App-title">Firefly</h1><br/>
-            <h1 className="App-sub-title">Pediatrics</h1>
+            <img className='App-bug' src={bug} alt='firefly zooming on his way.' />
+            <img className='header-logo' src={logo} alt='Firefly Pediatrics' />
           </header>
         </a>
       );

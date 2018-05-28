@@ -15,6 +15,10 @@ html {
   margin: auto;
 }
 
+.icon-portal {
+  
+}
+
 .home {
   background-color: rgb(255, 244, 229);
   width: 100vw;
@@ -32,7 +36,7 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    width:100vw;
+    width: 100vw;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -58,9 +62,10 @@ html {
   clear: both;
   content: "";
 }
+
 .portal {
-  height:100vh;
-  width:100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 .content {
@@ -100,30 +105,9 @@ li {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 300px) {
-  .home-title {
-    font-size: 1.5em;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .home-title {
-    font-size: 2em;
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .home-title {
-    font-size: 2.75em;
-    position: relative;
-    top: 20vh;
-    left: -22vw;
-  }
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-bug {
+  animation: App-bug-fly infinite 20s linear;
+  height: 40%;
 }
 
 .App-header {
@@ -389,9 +373,10 @@ li.glow {
   .page-footer-image {
     content: "";
     background: url('./resources/bottom-shape.jpg') repeat-x;
-    height: 15px;
-    background-size: 49.5vw;
-    bottom: 0px;
+    height: 10vh;
+    background-size: 100vw;
+    bottom: 0vh;
+    margin-top:5vh;
     display: flex;
     align-items: flex-end;
     clear: both;
@@ -400,49 +385,49 @@ li.glow {
 
 @media screen and (min-width: 300px) {
   .page-footer-image {
-    height: 15px;
+    height: 5vh;
   }
 }
 
 @media screen and (min-width: 400px) {
   .page-footer-image {
-    height: 25px;
+    height: 5vh;
   }
 }
 
 @media screen and (min-width: 500px) {
   .page-footer-image {
-    height: 35px;
+    height: 16vh;
   }
 }
 
 @media screen and (min-width: 600px) {
   .page-footer-image {
-    height: 40px;
+    height: 17vh;
   }
 }
 
 @media screen and (min-width: 700px) {
   .page-footer-image {
-    height: 45px;
+    height: 17vh;
   }
 }
 
 @media screen and (min-width: 800px) {
   .page-footer-image {
-    height: 50px;
+    height: 19vh;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-footer-image {
-    height: 60px;
+    height: 20vh;
   }
 }
 
 @media screen and (min-width: 1300px) {
   .page-footer-image {
-    height: 75px;
+    height: 20vh;
   }
 }
 
@@ -464,12 +449,82 @@ a .button-apple {
   width: 133px;
 }
 
-@keyframes App-logo-spin {
+.header-logo {
+  max-width: 100vw;
+  height: 100%;
+  position: relative;
+  left: -20vw;
+  top: 0vw;
+}
+
+/* @media screen and (min-width: 300px) {
+  .header-logo {
+    left: -12vw;
+  }
+} */
+
+@media screen and (min-width: 0px) {
+  .home-logo {
+    width: 75vw;
+    position: relative;
+    left: -5vw;
+    top: 15vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .home-logo {
+    width: 75vw;
+    position: relative;
+    left: -5vw;
+    top:-0.5vh;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .home-logo {
+    width: 65vw;
+    position: relative;
+    left: -5vw;
+    top: 5vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .home-logo {
+    width: 55vw;
+    position: relative;
+    left: -15vw;
+    top: 5vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .home-logo {
+    width: 65vw;
+    position: relative;
+    left: -20vw;
+    top:15vh;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .home-logo {
+    width: 50vw;
+    position: relative;
+    left: -15vw;
+    top:15vh;
+  }
+}
+
+@keyframes App-bug-fly {
   from {
     transform: rotate(0deg);
+    transform: translate(-80vw);
   }
   to {
     transform: rotate(360deg);
+    transform: translate(120vw);
   }
 }
 
@@ -596,4 +651,8 @@ form {
   #cdc-vaccine-link {
     display: none;
   }
+}
+
+.phone {
+  cursor: text;
 }

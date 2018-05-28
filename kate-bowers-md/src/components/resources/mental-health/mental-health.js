@@ -49,14 +49,13 @@ function MentalHealth() {
                         Mental Health is such an important part of child development, and your own mental health is a huge part of how you parent. If you have any concerns about your child's mental health or your own, please bring it up with your doctor. Do not wait until your next visit! <br />Here are some valuable resources you can use to jump-start conversations with your children about mental health. Start talking about emotions when your kids are young so they have the tools to do so as they get older.
                     </p>
                 </div>
-                <div className='left'>
+                <div className='full'>
                     <UnorderedLinkedList adds={adds} head='Postpartum Blues and Depression' elements={postpartum} />
                     <UnorderedLinkedList adds={adds} head='Anxiety' elements={anxiety} />
                     <UnorderedLinkedList adds={adds} head='Behavioral Outbursts' elements={behavioralOutbursts} />
                     <UnorderedLinkedList adds={adds} head='ADHD' elements={adhd} />
                 </div>
                 <div className='right'>
-                    <UnorderedLinkedList adds={adds} head='More Resources' elements={[]} />
                 </div>
             </div>
         </section >

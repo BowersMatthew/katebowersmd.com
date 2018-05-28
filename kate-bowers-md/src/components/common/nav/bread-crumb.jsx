@@ -13,11 +13,12 @@ class BreadCrumb extends Component {
         const crumbs = [];
         this.paths = ['/', ...location.pathname.split('/')]
         let i = 0;
+        let prevLink = '';
         this.paths.forEach(element => {
             if (element !== '') {
-                let link = element === '/' ? '' :`/${element}`
+                let link = element === '/' ? '' :`${prevLink}/${element}`;
+                prevLink = link;
                 let words = element === '/' ? 'Home/' : `${element.charAt(0).toUpperCase()}${element.substr(1)}/`
-                console.log(link);
                 crumbs.push(<Link key={i++} to={link}>{words}</Link>)
             }
         });
