@@ -9,6 +9,7 @@ import App from './App';
 import About from './components/about/about';
 import Home from './components/home/home';
 import NewPatients from './components/new-patients/new-patients';
+import Insurance from './components/insurance/insurance';
 import Resources from './components/resources/resources';
 import Vaccines from './components/resources/vaccines/vaccines';
 import Parenting from './components/resources/parenting/parenting';
@@ -21,6 +22,7 @@ import Contact from './components/contact/contact';
 import Privacy from './components/contact/privacy';
 import Portal from './components/portal';
 import { VaccineAutism } from './components/resources/parenting/vaccines-autism';
+import PatientForms from './components/resources/patient-forms/patient-forms';
 
 const Root = (props) => {
   return (
@@ -30,6 +32,7 @@ const Root = (props) => {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/newPatients' component={NewPatients} />
+          <Route path='/Insurance' component={Insurance} />
           <Route exact path='/resources' component={Resources} />
           <Route exact path='/resources/vaccines' component={Vaccines} />
           <Route exact path='/resources/parenting' component={Parenting} />
@@ -38,11 +41,11 @@ const Root = (props) => {
           <Route exact path='/resources/sickChild' component={SickChild} />
           <Route exact path='/resources/sickChild/medicationDosing' component={MedicationDosing} />
           <Route exact path='/resources/mentalHealth' component={MentalHealth} />
+          <Route exact path='/resources/patient-forms' component={PatientForms} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/contact/privacy' component={Privacy} />
           <Route path='/site-map' component={SiteMap} />
           <Route path='/portal' component={Portal} />
-          <Route path='*' component={Home} />
         </Switch>
       </App>
     </Router>

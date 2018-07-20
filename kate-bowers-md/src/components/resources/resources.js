@@ -31,7 +31,7 @@ const Resources = () => {
                         <ListButton alt='mental health' target='/resources/mentalHealth' /><Link to='/resources/mentalHealth' className='list-button-label glow' page='/resources/mentalHealth'>Mental Health</Link>
                     </div>
                     <div className='resource-list'>
-                        <ListButton alt='Patient Portal' target='/portal' /><Link to='/portal' className='list-button-label glow'>Patient Portal</Link>
+                        <ListButton alt='Patient Forms' target='/resources/patient-forms' /><Link to='/resources/patient-forms' className='list-button-label glow' page='/resources/patient-forms'>Patient Forms</Link>
                     </div>
                 </div>
             </div>

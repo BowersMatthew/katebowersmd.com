@@ -12,7 +12,7 @@ function Contact() {
                 <p>Sat: by appointment</p>
             </div>
             <div className='content'>
-                <div className='fuller'>Until the office opens, please provide your email and a brief message to make sure you stay up to date!</div>
+                <div className='fuller'>Use this contact form to RSVP for our meet and greet and prenatal party events, please provide your email and a brief message indicating the reason for your contact.</div>
                 <form className='fuller' action="https://contactform.prod.with-datafire.io/contact" method="post">
                     <div>
                         <h3 className='contact-label'>E-mail:</h3><br />
@@ -20,7 +20,7 @@ function Contact() {
                     </div>
                     <div>
                         <h3 className='contact-label'>Message:</h3><br />
-                        <textarea className='contact-message fuller' name="message" defaultValue='Please add me to your email list!'></textarea>
+                        <textarea className='contact-message fuller' name="message" defaultValue='I will be attending the event on __/__/20__'></textarea>
                     </div>
                     <input type="submit" value="Submit" />
                 </form>

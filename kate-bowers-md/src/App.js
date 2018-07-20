@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './fireflypedsva-fonts.css';
 import { Header, MainNav } from './components/common/index';
 import PropTypes from 'prop-types';
 import Footer from './components/common/footer';

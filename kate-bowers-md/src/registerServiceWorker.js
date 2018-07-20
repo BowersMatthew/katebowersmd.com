@@ -53,32 +53,41 @@ export default function register() {
 }
 
 function registerValidSW(swUrl) {
-  navigator.serviceWorker
-    .register(swUrl)
-    .then(registration => {
-      registration.onupdatefound = () => {
-        const installingWorker = registration.installing;
-        installingWorker.onstatechange = () => {
-          if (installingWorker.state === 'installed') {
-            if (navigator.serviceWorker.controller) {
-              // At this point, the old content will have been purged and
-              // the fresh content will have been added to the cache.
-              // It's the perfect time to display a "New content is
-              // available; please refresh." message in your web app.
-              console.log('New content is available; please refresh.');
-            } else {
-              // At this point, everything has been precached.
-              // It's the perfect time to display a
-              // "Content is cached for offline use." message.
-              console.log('Content is cached for offline use.');
-            }
-          }
-        };
-      };
-    })
-    .catch(error => {
-      console.error('Error during service worker registration:', error);
-    });
+  navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for (let registration of registrations) {
+      registration.unregister();
+    }
+  });
+  navigator.serviceWorker.getRegistration().then(function(registrations) {
+    for (let registration of registrations) {
+      registration.unregister();
+    }
+  });
+    // .register(swUrl)
+    // .then(registration => {
+    //   registration.onupdatefound = () => {
+    //     const installingWorker = registration.installing;
+    //     installingWorker.onstatechange = () => {
+    //       if (installingWorker.state === 'installed') {
+    //         if (navigator.serviceWorker.controller) {
+    //           // At this point, the old content will have been purged and
+    //           // the fresh content will have been added to the cache.
+    //           // It's the perfect time to display a "New content is
+    //           // available; please refresh." message in your web app.
+    //           console.log('New content is available; please refresh.');
+    //         } else {
+    //           // At this point, everything has been precached.
+    //           // It's the perfect time to display a
+    //           // "Content is cached for offline use." message.
+    //           console.log('Content is cached for offline use.');
+    //         }
+    //       }
+    //     };
+    //   };
+    // })
+    // .catch(error => {
+    //   console.error('Error during service worker registration:', error);
+    // });
 }
 
 function checkValidServiceWorker(swUrl) {
@@ -112,6 +121,7 @@ export function unregister() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(registration => {
       registration.unregister();
+      console.log('removing sw');
     });
   }
 }

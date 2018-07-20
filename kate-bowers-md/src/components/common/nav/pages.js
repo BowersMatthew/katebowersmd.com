@@ -10,6 +10,11 @@ export const Pages = [
       id: 'new-patients'
     },
     {
+      name: 'Insurance',
+      link: '/Insurance',
+      id: 'insurance'
+    },
+    {
       name: 'Resources',
       link: '/resources',
       id: 'health-resources'

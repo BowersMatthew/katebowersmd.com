@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../resources/Firefly_Logo_White.png';
+import logo from '../../resources/Firefly_Logo_White_New.png';
 
 export class Home extends Component {
     render() {

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './App.css';
 import Root from './root';
-import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 
 ReactDOM.render(<Root />, document.getElementById('root'));
-registerServiceWorker();
+unregister();

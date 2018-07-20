@@ -127,7 +127,7 @@ const Parenting = () => {
         GreatSchoolsAparentsguidetoSection504inpublicschools: 'https://www.greatschools.org/gk/articles/section-504-2/',
         USDeptofEducationGuidetotheIEP: 'https://www2.ed.gov/parents/needs/speced/iepguide/index.html',
         BabyLedWeaning: 'http://www.babyledweaning.com/',
-        JanetLansburyParentingtoPreventChildhoodObesity: 'Janet Lansbury - Parenting to Prevent Childhood Obesity',
+        JanetLansburyParentingtoPreventChildhoodObesity: 'http://www.janetlansbury.com/2011/08/parenting-to-prevent-childhood-obesity-guest-post-by-kiyah-duffey/',
         SeattleChildrensEatingTips: 'http://pulse.seattlechildrens.org/healthy-eating-tips-for-babies-and-toddlers/',
         BookTheScienceofMomAResearchBasedGuidetoYourBabysFirstYear: 'https://www.amazon.com/Science-Mom-Research-Based-Guide-Babys/dp/1421417324/ref=sr_1_1?s=books&ie=UTF8&qid=1523240050&sr=1-1&keywords=science+mom',
         BookThe90MinuteBabySleepProgram: 'https://www.amazon.com/90-Minute-Baby-Sleep-Program-Natural-ebook/dp/B0037BVKJ4',

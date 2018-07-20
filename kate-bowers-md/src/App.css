@@ -15,10 +15,6 @@ html {
   margin: auto;
 }
 
-.icon-portal {
-  
-}
-
 .home {
   background-color: rgb(255, 244, 229);
   width: 100vw;
@@ -30,7 +26,21 @@ html {
   background-attachment: fixed;
 }
 
+#portal-image {
+  width: 60vw;
+}
+
 @media screen and (min-width: 400px) {
+  #portal-image {
+    width: 50vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #portal-image {
+    width: 30vw;
+  }
+
   body {
     background-image: url("./resources/background-image.jpg");
     background-repeat: no-repeat;
@@ -49,12 +59,34 @@ html {
   }
 }
 
+@media screen and (min-width: 800px) {
+  #portal-image {
+    width: 40vw;
+  }
+
+  .insurance {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 80vw;
+  }
+
+  .patient-forms {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-width: 80vw;
+  }
+}
+
 @media screen and (min-width: 1300px) {
+  #portal-image {
+    width: 20vw;
+  }
   .home {
     background-image: url("./resources/background-image-wide.jpg");
     background-size: contain;
   }
 }
+
 
 .newClass {
   background-color: rgb(255, 244, 229);
@@ -77,13 +109,19 @@ html {
   margin-top: 3%;
 }
 
+
 h1 {
-  font-size: 1.8em;
+  font-family: 'OriginsSmooth-Regular';
+  font-size: 3em;
+  font-weight: lighter;
   color: rgb(199, 131, 132);
+  margin: .25em -.5em -.5em -.5em;
 }
 
 h2 {
-  font-size: 1.6em;
+  font-family: 'OriginsSmooth-Regular';
+  font-size: 2.6em;
+  font-weight: lighter;
   color: rgb(253, 156, 106);
 }
 
@@ -376,7 +414,7 @@ li.glow {
     height: 10vh;
     background-size: 100vw;
     bottom: 0vh;
-    margin-top:5vh;
+    margin-top: 5vh;
     display: flex;
     align-items: flex-end;
     clear: both;
@@ -477,7 +515,7 @@ a .button-apple {
     width: 75vw;
     position: relative;
     left: -5vw;
-    top:-0.5vh;
+    top: -0.5vh;
   }
 }
 
@@ -504,7 +542,7 @@ a .button-apple {
     width: 65vw;
     position: relative;
     left: -20vw;
-    top:15vh;
+    top: 15vh;
   }
 }
 
@@ -513,7 +551,7 @@ a .button-apple {
     width: 50vw;
     position: relative;
     left: -15vw;
-    top:15vh;
+    top: 15vh;
   }
 }
 
@@ -655,4 +693,9 @@ form {
 
 .phone {
   cursor: text;
+}
+
+.PrenatalPartyInvite {
+  width:85vw;
+  margin-top:3vh;
 }

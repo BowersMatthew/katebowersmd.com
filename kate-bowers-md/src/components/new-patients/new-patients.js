@@ -1,8 +1,12 @@
 import React from 'react';
+import PrenatalParty from '../../resources/PrenatalParty.png';
 
 const NewPatients = () => {
     return (
         <section className="new-patients">
+        <section className="prenatalParty">
+        <img src={PrenatalParty} className="PrenatalPartyInvite" alt="July 18th and August 1st at 5:30pm RSVP 804-372-3473" />
+        </section>
             <h1>New Patients</h1>
             <div className="left">
                 <h2>Having or Adopting a Baby?</h2>
@@ -24,23 +28,6 @@ const NewPatients = () => {
                 </ul>
             </div>
             <br />
-            <div className="content">
-                <h3>Insurance</h3>
-                <p>We Will Be Participating With The Following Insurances</p>
-                <div>
-                        <p>Anthem/BCBS (except Health Keepers Plus)</p>
-                        <p>Aetna</p>
-                        <p>Cigna</p>
-                        <p>MAMSI/Optimum Choice</p>
-                        <p>Multiplan</p>
-                        <p>Optima</p>
-                        <p>Preferred Care of Richmond</p>
-                        <p>Private Healthcare Systems (PHCS)</p>
-                        <p>United Healthcare</p>
-                        <p>Southern Health/First Health/Coventry Healthcare</p>
-                        <p>Virginia Health Network (VHN)</p>
-                </div>
-            </div>
         </section>
     )
 }
