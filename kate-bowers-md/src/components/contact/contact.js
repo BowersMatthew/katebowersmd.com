@@ -5,6 +5,7 @@ function Contact() {
     return (
         <section className='contact'>
             <h1 className='page-heading'>Contact Us</h1>
+            <br/>
             <div>
                 <a className="phone" href="tel:804-372-3473">Phone: (804) 372-3473</a>
                 <p>Fax: (804) 299-4021</p>

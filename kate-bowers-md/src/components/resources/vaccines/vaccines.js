@@ -101,14 +101,14 @@ const Vaccines = () => {
                 <a id="cdc-vaccine-link" class="glow" href="https://www.cdc.gov/vaccines/schedules/easy-to-read/child-shell-easyread.html">CDC Vaccine Page</a>
                 <div className='fuller'><iframe id="cdc-vaccine" src="https://www.cdc.gov/vaccines/schedules/easy-to-read/child-shell-easyread.html" width="65%" height="1000px" frameBorder="0" scrolling="auto" title="Easy-to-Read Schedule for Children, Birth through 6 Years">Easy-to-Read Schedule for Children, Birth through 6 Years</iframe></div>
                 <h2>Vaccine Schedule</h2>
-                <div className="left middle">
+                <div className="left">
                     <UnorderedLinkList adds={adds} head='Birth' elements={birthList} />
                     <UnorderedLinkList adds={adds} head='2 Month' elements={twoMonth} />
                     <UnorderedLinkList adds={adds} head='4 Month' elements={fourMonth} />
                     <UnorderedLinkList adds={adds} head='6 Month' elements={sixMonth} />
                     <UnorderedLinkList adds={adds} head='9 Month' elements={nineMonth} />
                 </div>
-                <div className="right middle">
+                <div className="right">
                     <UnorderedLinkList adds={adds} head='12 Month' elements={oneYear} />
                     <UnorderedLinkList adds={adds} head='15 Month' elements={fifteenMonth} />
                     <UnorderedLinkList adds={adds} head='18 Month' elements={eighteenMonth} />

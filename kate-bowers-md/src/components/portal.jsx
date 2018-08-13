@@ -10,8 +10,8 @@ export function Portal() {
                 <p> Remember at 10pm that you need a check-up? Just log on a send us an appointment request and we'll see it when our office opens in the morning!</p>
                 <br/>
                 <h3>Click on the Office Practicum icon below to get started!</h3>
-                <a href="https://firefly.patientmedrecords.com" target="_blank">
-                    <img id="portal-image" src={PortalImage} alt="OP Patient Portal" />
+                <a href="https://firefly.patientmedrecords.com" target="_blank" rel="noopener noreferrer">
+                    <img className='glow' id="portal-image" src={PortalImage} alt="OP Patient Portal" />
                 </a>
             </article>
             <br/>

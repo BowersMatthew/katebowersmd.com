@@ -298,7 +298,7 @@ function SickChild() {
                 </div>
             </div>
             <section className='sick-resources'>
-            <h1>Common Illnesses A to Z</h1>
+            <h1>Common Illnesses</h1>
                 <div className="left">
                     <UnorderedLinkedList adds={adds} head='Acne' elements={acne} />
                     <UnorderedLinkedList adds={adds} head='Allergies' elements={allergies} />
