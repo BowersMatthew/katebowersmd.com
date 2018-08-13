@@ -9,12 +9,15 @@ export class Home extends Component {
                 <section className="intro">
                     <div className="inner">
                         <div className="content">
-                            <img className="home-logo" src={logo} alt="firefly pediatrics logo"/>
-                        </div> 
+                            <img className="home-logo" src={logo} alt="firefly pediatrics logo" />
+                        </div>
                     </div>
 
                 </section>
+                <div id="about">
                 <About />
+                </div>
+
             </div>
         )
     }
