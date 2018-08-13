@@ -1,3 +1,13 @@
+.intro {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background: url('./resources/background-image-1200.jpg') no-repeat right;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
 html {
   overflow-y: scroll;
   background-color: rgb(255, 244, 229)
@@ -19,11 +29,10 @@ html {
   background-color: rgb(255, 244, 229);
   width: 100vw;
   height: 100vh;
-  background-image: url("./resources/background-image-mobile-portrait.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+}
+
+.home-title {
+  height: 100vh;
 }
 
 #portal-image {
@@ -42,10 +51,6 @@ html {
   }
 
   body {
-    background-image: url("./resources/background-image.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     width: 100vw;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -80,10 +85,6 @@ html {
 @media screen and (min-width: 1300px) {
   #portal-image {
     width: 20vw;
-  }
-  .home {
-    background-image: url("./resources/background-image-wide.jpg");
-    background-size: contain;
   }
 }
 
@@ -507,6 +508,7 @@ a .button-apple {
     position: relative;
     left: -5vw;
     top: 15vh;
+    margin-left: 8%;
   }
 }
 
@@ -515,7 +517,7 @@ a .button-apple {
     width: 75vw;
     position: relative;
     left: -5vw;
-    top: -0.5vh;
+    top: 5vh;
   }
 }
 
