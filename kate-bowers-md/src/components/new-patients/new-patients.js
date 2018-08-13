@@ -5,7 +5,7 @@ const NewPatients = () => {
     return (
         <section className="new-patients">
         <section className="prenatalParty">
-        <img src={PrenatalParty} className="PrenatalPartyInvite" alt="July 18th and August 1st at 5:30pm RSVP 804-372-3473" />
+        <img src={PrenatalParty} className="PrenatalPartyInvite" alt="September 5th and October 3rd at 5:30pm RSVP 804-372-3473" />
         </section>
             <h1>New Patients</h1>
             <div className="left">

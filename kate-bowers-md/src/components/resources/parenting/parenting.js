@@ -59,6 +59,12 @@ const Parenting = () => {
         '(Book) The Care and Keeping of You 2 - The Body Book for Older Girls'
     ]
 
+    const LGBTQ = [
+        'CDC - LGBT Health',
+        'The Trevor Project - Crisis Intervention',
+        'PFLAG - Richmond'
+    ]
+
     const schoolAccomodations = [
         'US Dept of Education - Guide to the IEP',
         'Great Schools - A parent’s guide to Section 504 in public schools',
@@ -99,6 +105,9 @@ const Parenting = () => {
     // links
     // const adds ={noSpaceName: 'https://...'}
     const adds = {
+        PFLAGRichmond: 'http://www.pflag.org/chapter/pflag-richmond',
+        TheTrevorProjectCrisisIntervention: 'https://www.thetrevorproject.org/#sm.0015qa4vv12jbdttqim2iaf69ofqi',
+        CDCLGBTHealth: 'https://www.cdc.gov/lgbthealth/',
         AutismSpeaksWhatisAutism: 'https://www.autismspeaks.org/what-autism',
         AutismSpeaksResourceLibrary: 'https://www.autismspeaks.org/family-services/resource-library/websites-families',
         AhaParentingDisciplineThatWorks: 'http://www.ahaparenting.com/parenting-tools/discipline',
@@ -177,6 +186,7 @@ const Parenting = () => {
                 </div>
                 <UnorderedLinkedList adds={adds} head='Bullying' elements={bullying} />
                 <UnorderedLinkedList adds={adds} head='Bodies and Reproduction' elements={bodiesandReproduction} />
+                <UnorderedLinkedList adds={adds} head='LGBTQ Resources' elements={LGBTQ} />
                 <UnorderedLinkedList adds={adds} head='School Accomodations' elements={schoolAccomodations} />
                 <UnorderedLinkedList adds={adds} head='Divorce/Separation' elements={divorce} />
                 <UnorderedLinkedList adds={adds} head='Social Media' elements={socialMedia} />

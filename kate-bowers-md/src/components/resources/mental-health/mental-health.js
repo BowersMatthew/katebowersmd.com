@@ -2,6 +2,11 @@ import React from 'react';
 import UnorderedLinkedList from '../../common/link-list/unordered-link-list';
 
 function MentalHealth() {
+    const general = [
+        'Hey Sigmund - Strong Foundations for Emotional Intelligence',
+        '(book) How Full is Your Bucket?',
+    ]
+
     const postpartum = [
         'PostpartumVA',
         'The Atlantic - Postpartum Depression Can Happen to Any Parent',
@@ -26,6 +31,8 @@ function MentalHealth() {
     ]
 
     const adds = {
+        bookHowFullisYourBucket: 'https://www.amazon.com/How-Full-Your-Bucket-Kids/dp/1595620273',
+        HeySigmundStrongFoundationsforEmotionalIntelligence: 'https://www.heysigmund.com/how-to-teach-kids-about-the-brain-laying-strong-foundations-for-emotional-intelligence-by-dr-hazel-harrison/',
         BookSmartButScattered: 'https://www.amazon.com/Smart-but-Scattered-Revolutionary-Executive/dp/1593854455/ref=sr_1_1?ie=UTF8&qid=1523292095&sr=8-1&keywords=smart+but+scattered',
         AACAPADHDResourceCenter: 'https://www.aacap.org/aacap/Families_and_Youth/Resource_Centers/ADHD_Resource_Center/Home.aspx',
         ADDitudeMagInsidetheADHDMind: 'https://www.additudemag.com/',
@@ -44,12 +51,13 @@ function MentalHealth() {
         <section className='mental-health'>
             <h1>Mental Health</h1>
             <div className='content'>
-                <div className='full'>
-                    <p className='content-text'>
+                <div className='fuller '>
+                    <p className='center-align'>
                         Mental Health is such an important part of child development, and your own mental health is a huge part of how you parent. If you have any concerns about your child's mental health or your own, please bring it up with your doctor. Do not wait until your next visit! <br />Here are some valuable resources you can use to jump-start conversations with your children about mental health. Start talking about emotions when your kids are young so they have the tools to do so as they get older.
                     </p>
                 </div>
                 <div className='full'>
+                    <UnorderedLinkedList adds={adds} head='General Principles' elements={general} />
                     <UnorderedLinkedList adds={adds} head='Postpartum Blues and Depression' elements={postpartum} />
                     <UnorderedLinkedList adds={adds} head='Anxiety' elements={anxiety} />
                     <UnorderedLinkedList adds={adds} head='Behavioral Outbursts' elements={behavioralOutbursts} />
