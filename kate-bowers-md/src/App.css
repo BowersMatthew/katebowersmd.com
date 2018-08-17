@@ -2,10 +2,36 @@
   height: 100vh;
   width: 100vw;
   margin: auto;
-  background: url('./resources/background-image-1200.jpg') no-repeat right;
+  background: url('./resources/background-image-800.jpg') no-repeat right;
   display: table;
   top: 0;
   background-size: cover;
+}
+
+.embedded-video {
+  width: 300px;
+  height: 169px;;
+}
+
+@media screen and (min-width: 600px) {
+  .embedded-video {
+    width: 420px;
+    height: 236px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .embedded-video {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .embedded-video {
+    width: 700px;
+    height: 394px;
+  }
 }
 
 html {
@@ -46,6 +72,7 @@ html {
 }
 
 @media screen and (min-width: 1000px) {
+
   #portal-image {
     width: 30vw;
   }
@@ -411,7 +438,7 @@ li.glow {
 @media screen and (min-width: 00px) {
   .page-footer-image {
     content: "";
-    background: url('./resources/bottom-shape.jpg') repeat-x;
+    background: url('./resources/bottom-shape.png') repeat-x;
     height: 10vh;
     background-size: 100vw;
     bottom: 0vh;
