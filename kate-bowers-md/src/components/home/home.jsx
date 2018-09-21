@@ -23,7 +23,7 @@ export class Home extends Component {
                         <h4>Saturday October 20th</h4>
                         <p>9:00am to 12:00pm</p>
                         <p>Bring your kids, in their Halloween costumes for a quick flu shot!</p>
-                        <p>Call us at <a className="phone" href="tel:804-372-3473">(804) 372-3473</a> or schedule your own appointment on the patient <Link to='/portal'>Portal</Link></p>
+                        <p>Call us at <a className="phone" href="tel:804-372-3473">(804) 372-3473</a> or schedule your own appointment on the <Link className="glow" to='/portal'>patient portal</Link></p>
                     </article>
                 </section>
                 <br />
