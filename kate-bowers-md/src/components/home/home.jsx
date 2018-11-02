@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../resources/Firefly_Logo_White_New.png';
 import About from '../about/about.jsx';
-import FluClinicPic from '../../resources/boo-to-the-flu.jpg'
+import AnnouncementPic from '../../resources/welcome-woodlake.png'
 
 export class Home extends Component {
     render() {
@@ -17,16 +17,17 @@ export class Home extends Component {
 
                 </section>
                 <section id="announcements">
-                    <img src={FluClinicPic} className="PrenatalPartyInvite" alt="Flu Shot Clinic Oct 20 9:00am to 12:00pm RSVP 804-372-3473 or on the portal" />
+                    <img src={AnnouncementPic} className="PrenatalPartyInvite" alt="Welcome Patients of Woodlake Village Pediatrics. We are excited to announce that Dr. Jennifer Clark will be joining Firefly Pediatrics! Check out our resources page and call us if you have any questions!" />
                     <article className="fuller">
-                        <h1 id='title-announcement'>Flu Clinic</h1>
-                        <h4>Saturday October 20th</h4>
-                        <p>9:00am to 12:00pm</p>
-                        <p>Bring your kids, in their Halloween costumes for a quick flu shot!</p>
-                        <p>Call us at <a className="phone" href="tel:804-372-3473">(804) 372-3473</a> or schedule your own appointment on the <Link className="glow" to='/portal'>patient portal</Link></p>
+                    <p>Call us at <a className="phone" href="tel:804-372-3473">(804) 372-3473</a> or register on our <Link className="glow" to='/portal'>patient portal</Link></p>
+                    <h1> Welcome to Firefly Open House </h1>
+                    <h3> Saturday November 17th from 12:00pm to 2:00pm </h3>
+                    <p> Join Dr. Clark and Dr. Bowers to meet, tour the office, and enjoy some refreshments and games for the kids!</p>
+                        
                     </article>
                 </section>
                 <br />
+                <h1> {String.fromCharCode(160)} </h1>
                 <div id="about">
                 <About />
                 </div>
